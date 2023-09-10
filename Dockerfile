@@ -1,9 +1,10 @@
 FROM centos
-MAINTAINER akayola
+MAINTAINER akayola <akayola@gmail.com>
 
 # Add repo file
 ADD ./testapp.repo /etc/yum.repos.d/
 
+# Install software
 RUN yum --assumeyes update && \
 yum --assumeyes install \
 nmap iproute && \
