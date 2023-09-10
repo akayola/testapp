@@ -4,7 +4,7 @@ MAINTAINER akayola <akayola@gmail.com>
 # Add repo file
 ADD ./testapp.repo /etc/yum.repos.d/
 
-# Install software
+# Install some packages
 RUN yum --assumeyes update && \
 yum --assumeyes install \
 nmap iproute && \
